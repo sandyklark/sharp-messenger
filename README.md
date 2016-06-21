@@ -53,8 +53,6 @@ and define your message type constants.
   ```csharp
   SendMessage(AppMessageConfig.MESSAGE_ONE, optionalDataObject);
   ```
-## Coming Soon
-*Unity package
 
 ## License
 The MIT License (MIT). Please see [License File](https://github.com/sandyklark/sharp-messenger/blob/master/LICENSE.md) for more information.
