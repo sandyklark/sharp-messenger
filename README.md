@@ -42,10 +42,12 @@ and define your message type constants.
 	  }
   }
   ```
-4. Subscribe to a message (must be done in a class that extends AbstractMessenger)
+4. Subscribe or Unsubscribe from a message (must be done in a class that extends AbstractMessenger)
 
   ```csharp
   Subscribe(AppMessageConfig.MESSAGE_ONE, callback);
+  
+  Unsubscribe(AppMessageConfig.MESSAGE_ONE, callback);
   ```  
   
 5. Send a message from that class
