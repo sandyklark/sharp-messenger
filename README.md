@@ -62,7 +62,10 @@ and define your message type constants.
 5. Send a message from that class
 
   ```csharp
-  SendMessage(AppMessageConfig.MESSAGE_ONE, optionalDataObject);
+  SendMessage(AppMessageConfig.MESSAGE_ONE);                         //With no data
+  
+  int optionalData = 15;
+  SendMessage(AppMessageConfig.MESSAGE_ONE, optionalData);           //With some data
   ```
 
 ## License
