@@ -50,6 +50,14 @@ and define your message type constants.
   
   Unsubscribe(AppMessageConfig.MESSAGE_ONE, callback);
   ```  
+ 
+  Callbacks must follow the signature:
+  
+  ```csharp
+  void callback(object data);
+  ```
+  
+  Data can be null and must be cast in the handler to the specific type you sent.
   
 5. Send a message from that class
 
