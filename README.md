@@ -20,7 +20,8 @@ and define your message type constants.
 2. Create an instance of MessageManager. 
 
   ```csharp
-  MessageManager messageManager = new MessageManager();
+  List<IMessage> messages = AppMessageConfig.GetMessages();
+  MessageManager messageManager = new MessageManager(messages);
   ```
 
 3. Create classes that extend AbstractMessenger and pass it the instance of the message manager.
