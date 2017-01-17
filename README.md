@@ -9,7 +9,7 @@ A decoupled messaging system for c# that allows the definition of custom message
 and define your message type constants.
 
   ```csharp
-  public class AppMessageConfig : AbstractMessageConfig<GameMessageConfig> 
+  public class AppMessageConfig : AbstractMessageConfig<AppMessageConfig> 
   {
 	  // messages
 	  public static readonly string MESSAGE_ONE = "message_one";
