@@ -28,7 +28,7 @@ and define your message type constants.
   ```csharp
   public class SomeController : AbstractMessenger
   {
-	  public SomeController(MessageManager messageManager : base(messageManager)
+	  public SomeController(MessageManager messageManager) : base(messageManager)
 	  {
 	    //Do stuff
 	  }
@@ -36,7 +36,7 @@ and define your message type constants.
   
   public class SomeOtherController : AbstractMessenger
   {
-	  public SomeOtherController(MessageManager messageManager : base(messageManager)
+	  public SomeOtherController(MessageManager messageManager) : base(messageManager)
 	  {
 	    //Do other stuff
 	  }
